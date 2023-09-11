@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projweb';
+  
+  username = 'nome de usuario';
+
+  userData = {
+    email: 'email@gmail.com',
+    role: 'admin'
+  }
 }
