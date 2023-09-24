@@ -20,8 +20,8 @@ export class ListRenderComponent {
   }
 
   removeAnimal(animal: Animal) {
-    console.log("Removendo animal");
-    this.animais = this.listService.remove(this.animais, animal);
+    this.animais = this.animais.filter((a) => animal.name != a.name);
+    //this.listService.remove(this.animais, animal);
   }
 
   getAnimals(): void {

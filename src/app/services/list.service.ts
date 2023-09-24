@@ -12,7 +12,7 @@ export class ListService {
   constructor(private http: HttpClient) { }
 
   remove(animais: Animal[], animal: Animal) {
-    return animais.filter((a) => animal.name != a.name);
+    return 
   }
 
   getAll(): Observable<Animal[]> {
